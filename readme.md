@@ -32,7 +32,7 @@ BookHub is a storage website where you can share your books with other users.
 
 * **Go** - Backend
 * **Html & Css** - Frontend
-* * **MySQL** - DBMS, data storage
+* **MySQL** - DBMS, data storage
 * **Bash** - Scripts (website launch)
 
 ## Getting Started
