@@ -13,10 +13,8 @@ read command
 echo -n -e "\nEnter the port on which the server will run >> "
 read port
 
-cd ../cmd/web_books/
-
 if [ $command = "run" ] || [ $command = "r" ]; then
     go run main.go $port
 else
-    go build main.go $port
+    go build main.go 
 fi
