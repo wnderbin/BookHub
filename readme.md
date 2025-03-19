@@ -47,7 +47,7 @@ Instructions on how to run a project locally
 ### Installation and Launch
 
 ```
-git clone ... # clone the repository
+git clone https://github.com/wnderbin/BookHub # clone the repository
 ```
 
 ```
