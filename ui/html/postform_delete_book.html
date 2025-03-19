@@ -1,0 +1,20 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/delete_book/postform_delete_book.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> {{ .Status }} </h1>
+
+    <h2 align="center"> Details: </h2>
+    
+    <p>Id book: {{ .Id }} </p>
+    <p>Username: {{ .Username }} </p>
+    <p>Password: {{ .Password }} </p>
+
+    <br><br><br>
+
+    <div class="Link">
+        <a href="/main/"> Back to main page </a>
+    </div>
+{{ end }}

@@ -1,0 +1,27 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/add_book/postform_add_book.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> {{ .Status }} </h1>
+
+    <h2 align="center">Details:</h2>
+    
+    <h3 align="center">Book title: {{ .Name }} </h3>
+    <p>Description: {{ .Description }} </p>
+    <div class="Link">
+        <a href="{{ .Url }}"> {{ .Url }} </a>
+    </div>
+    <p> Author: {{ .Author }} </p>
+    <p> Category: {{ .Category }} </p>
+    <h4 align="center"> Username: {{ .Username }} </h4>
+    <h4 align="center"> Password: {{ .Password }} </h4>
+
+    <br><br><br>
+
+    <div class="Link">
+        <a href="/main/"> Back to main page </a>
+    </div>
+    
+{{ end }}

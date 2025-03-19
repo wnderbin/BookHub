@@ -1,0 +1,23 @@
+{{ template "layout" . }}
+
+{{ define "title" }} Books {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/books/books.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Books </h1>
+    {{ range $b := .books }}
+        <div class="Book">
+            <h4 align="center"> Id: {{ $b.Id }} </h4>
+            <p align="center"> Book title: {{ $b.Name }} </p>
+            <p align="center"> Description: {{ $b.Description }} </p>
+            <div class = "Link">
+                <a href="{{ $b.Url }}"> Link </a>
+            </div>
+            <p align="center"> Author: {{ $b.Author }} </p>
+            <p align="center"> Category: {{ $b.Category }} </p>
+        </div>
+    {{ end }}
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+{{ end }}

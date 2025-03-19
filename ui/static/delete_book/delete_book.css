@@ -1,0 +1,64 @@
+body {
+    background-color: #171515;
+}
+
+/*
+    playfair-display font
+    link: https://fonts.google.com/specimen/Playfair+Display
+*/
+
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 3rem;
+}
+
+h4 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+form {
+    position: relative;
+    left: 45%;
+}
+
+input[type="submit"] {
+    color: #e4e4e4;
+    background: rgb(22, 22, 22);
+    position: relative;
+}
+
+input {
+    color: #e4e4e4;
+    background: rgb(22, 22, 22);
+    position: relative;
+    font-family: "playfair";
+}
+
+label {
+    position: absolute;
+    color: white;
+    font-family: "playfair";
+    font-size: 1.3rem;
+}
+
+.Link {
+    text-align: center;
+}

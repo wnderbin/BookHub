@@ -1,0 +1,51 @@
+{{ template "layout" . }}
+
+{{ define "title" }} Main Page {{ end }}
+
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/main_page/main_page.css"> {{ end }}
+
+{{ define "source" }}
+    <a href="/books/"> Books </a> &nbsp;
+    {{ range $c := .categories }}
+        <a href="/books/{{ $c.Category }}"> Books: {{ $c.Category }} </a> &nbsp;
+    {{ end }}  
+    &nbsp; &nbsp; &nbsp; &nbsp; 
+
+    <a href="/community/"> Community </a> &nbsp;
+    <a href="/user/register/"> Register </a> &nbsp;
+    <a href="/user/update/"> Update account info </a> &nbsp;
+    <a href="/user/delete/"> Delete user </a> &nbsp; &nbsp; &nbsp;  &nbsp;   &nbsp; 
+
+    <a href="/books/add/"> Add new book </a> &nbsp;
+    <a href="/books/update/"> Update an existing book </a> &nbsp;
+    <a href="/books/delete/"> Delete an exitsting book </a>  &nbsp;  &nbsp; &nbsp; 
+
+
+    <h1 align="center"> Welcome to our website! </h1>
+
+    <div class="Container">
+        <div class="WhoWe">
+            <h3> Who are we? </h3>
+            <br>
+            <p> <b> We are a repository site for books from all over the world. <br>
+                    Here you can share your books with other users. <br>
+                    We value and welcome sincere lovers of reading diverse literature! <br>
+            </b> </p> 
+        </div>
+
+        <div class="More">
+            <h3> More about us </h3>
+            <br>
+            <p>
+                <b> 1. Our site is a large, friendly community </b> that <br>
+                    will help you learn about even the most
+                    obscure books. <br>
+                <b> 2. Our site is not proprietary</b>, which
+                    means that anyone can change it as they wish. <br>
+            </p>
+        </div>
+    </div>
+    <div class="RyoIcon2"> </div>
+    <div class="RyoIcon"> </div>
+    <h3 align="center">Made with &#10084; by wnderbin</h3>
+{{ end }}

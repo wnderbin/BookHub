@@ -1,0 +1,37 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }}  <link rel="stylesheet" type="text/css" href="/static/update_user/update_user.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Update user page </h1>
+    <h4 align="center"> If you want to change your name or password </h4>
+
+    <form method="POST" action="postform">
+
+        <label>User id</label><br>
+        <input type="number" name="id" required/><br><br>
+
+        <label>Your current username</label><br>
+        <input type="text" name="cur_username" maxlength="20" required/><br><br>
+
+        <label>Your current password</label><br>
+        <input type="text" name="cur_password" maxlength="20" required/><br><br>
+
+        <label>Your new username</label><br>
+        <input type="text" name="new_username" maxlength="20" required/><br><br>
+
+        <label>Your new password</label><br>
+        <input type="text" name="new_password" maxlength="20" required/><br><br>
+
+        <input type="submit" value="Submit" />
+        
+    </form>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+
+{{ end }}

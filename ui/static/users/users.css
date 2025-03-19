@@ -1,0 +1,48 @@
+body {
+    background-color: #171515;
+}
+
+/*
+    playfair-display font
+    link: https://fonts.google.com/specimen/Playfair+Display
+*/
+
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 3rem;
+}
+
+a, p {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+.BooksCommunity {
+    background-image: url("assets/BooksCommunity.jpg");
+    width: 500px;
+    height: 750px;
+    left: 70%;
+    top: 15%;
+    position: absolute;
+    background-size: cover;
+}
+
+.StudyCommunity {
+    background-image: url("assets/StudyCommunity.jpg");
+    width: 600px;
+    height: 400px;
+    left: 35%;
+    top: 15%;
+    position: absolute;
+    background-size: cover;
+}

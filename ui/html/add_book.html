@@ -1,0 +1,41 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/add_book/add_book.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Add page </h1>
+    <h4 align="center"> Before adding a book to the database, you need to register. You just need to enter your name and password. </h4>
+
+    <form method="POST" action="postform">
+        <label>Book title</label><br>
+        <input type="text" name="name" maxlength="20" required/><br><br>
+
+        <label>Description</label><br>
+        <input type="text" name="description" maxlength="50" required/><br><br>
+
+        <label>URL</label><br>
+        <input type="text" name="url" maxlength="50" required/><br><br>
+
+        <label>Author</label><br>
+        <input type="text" name="author" maxlength="20" required/><br><br>
+
+        <label>Category</label><br>
+        <input type="text" name="category" maxlength="20" required/><br><br>
+
+        <label>Your name</label><br>
+        <input type="text" name="username" maxlength="20" required/><br><br>
+
+        <label>Your password</label><br>
+        <input type="text" name="password" maxlength="20" required/><br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+
+{{ end }}

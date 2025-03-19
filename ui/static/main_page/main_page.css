@@ -1,0 +1,82 @@
+body {
+    background-color: #171515;
+}
+
+/*
+    playfair-display font
+    link: https://fonts.google.com/specimen/Playfair+Display
+*/
+
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: playfair; 
+    font-weight: 700;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 3rem;
+}
+
+
+h3 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+a, p {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+} 
+
+.Container {
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+.WhoWe {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    float: left;
+}
+
+.More {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    float: right;
+}
+
+.RyoIcon2 {
+    background-image: url("assets/RyoIcon2.jpg");
+    width: 368px;
+    height: 368px;
+    left: 5%;
+    top: 45%;
+    position: absolute;
+    background-size: cover;
+}
+
+.RyoIcon {
+    background-image: url("assets/RyoIcon.jpg");
+    width: 368px;
+    height: 382px;
+    background-size: cover;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+}

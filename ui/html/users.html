@@ -1,0 +1,17 @@
+{{ template "layout" . }}
+
+{{ define "title" }} Community {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/users/users.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Our friendly community </h1>
+
+    {{ range $u := .users }}
+        <p> Username: {{ $u.Name }} - Id: {{ $u.Id }} </p> 
+    {{ end }}
+    
+    <a href="/main/"> Back to main page </a>
+
+    <div class="BooksCommunity"> </div>
+    <div class="StudyCommunity"> </div>
+{{ end }}

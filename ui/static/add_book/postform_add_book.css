@@ -1,0 +1,61 @@
+body {
+    background-color: #171515;
+}
+
+/*
+    playfair-display font
+    link: https://fonts.google.com/specimen/Playfair+Display
+*/
+
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 2rem;
+}
+
+h2 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 2rem;
+}
+
+h3 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.7rem;
+}
+
+h4 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+.Link {
+    text-align: center;
+}

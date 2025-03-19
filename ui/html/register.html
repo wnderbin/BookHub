@@ -1,0 +1,26 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/register/register.css"> {{ end }}
+
+{{ define "source" }}
+    <h1 align="center"> Registration page </h1>
+    <h4 align="center"> Before adding a book to the database, you need to register. You just need to enter your name and password. </h4>
+
+    <form method="POST" action="postform">
+        <label>Username</label><br>
+        <input type="text" name="username" maxlength="20" required/><br><br>
+
+        <label>Password</label><br>
+        <input type="text" name="password" maxlength="20" required/><br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+
+{{ end }}

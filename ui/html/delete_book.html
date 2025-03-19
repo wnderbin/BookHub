@@ -1,0 +1,30 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ . }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/delete_book/delete_book.css"> {{ end }}
+
+{{ define "source" }} 
+
+    <h1 align="center"> Delete book page </h1>
+    <h4 align="center"> If you wanted to delete the book </h4>
+
+    <form method="POST" action="postform">
+        <label>Book id</label><br>
+        <input type="number" name="id" required/><br><br>
+
+        <label>Your name</label><br>
+        <input type="text" name="username" maxlength="20" required/><br><br>
+
+        <label>Your password</label><br>
+        <input type="text" name="password" maxlength="20" required/><br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+
+{{ end }}

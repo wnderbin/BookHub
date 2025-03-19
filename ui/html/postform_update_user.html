@@ -1,0 +1,23 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/update_user/postform_update_user.css"> {{ end }}
+
+{{ define "source" }} 
+    <h1 align="center"> {{ .Status }} </h1>
+
+    <h2 align="center"> Details: </h2>
+
+    <p> Id: {{ .Id }} </p>
+    <p> Current username: {{ .Current_Username }} </p>
+    <p> Current password: {{ .Current_Password }}</p>
+    <p> New username: {{ .New_Username }} </p>
+    <p> New password: {{ .New_Password }}</p>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+
+{{ end }}

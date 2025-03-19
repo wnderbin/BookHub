@@ -1,0 +1,19 @@
+{{ template "layout" . }}
+
+{{ define "title" }} {{ .Title }} {{ end }}
+{{ define "style" }} <link rel="stylesheet" type="text/css" href="/static/register/postform_register.css"> {{ end }}
+
+{{ define "source" }}
+    <h2 align="center"> You have been successfully added to the database! </h2>
+    <h4 align="center"> Now you can add books to the database </h4>
+
+    <h4 align="center"> Username: {{ .Name }} </h4>
+    <h4 align="center"> Password: {{ .Pass }} </h4>
+
+    <br><br><br>
+
+    <div class="Link"> 
+        <a href="/main/"> Back to main page </a>
+    </div>
+    
+{{ end }}

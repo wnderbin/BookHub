@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+/*
+    playfair-display font
+    link: https://fonts.google.com/specimen/Playfair+Display
+*/
+
+@font-face {
+    font-family: playfair;
+    font-weight: 400;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+h1 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 3rem;
+}
+h2 {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.7rem;
+}
+a {
+    color: white;
+    position: relative;
+    font-family: "playfair";
+    font-size: 1.5rem;
+}
+
+.Link {
+    text-align: center;
+}
+
+.Dino {
+    background-image: url("assets/dino.jpg");
+    width: 700px;
+    height: 700px;
+    left: 35%;
+    top: 35%;
+    position: absolute;
+    background-size: cover;
+}
+
+.Notfound {
+    background-image: url("assets/notfound.jpg");
+    width: 368px;
+    height: 368px;
+    left: 75%;
+    top: 5%;
+    position: absolute;
+    background-size: cover;
+}
+
+.Ghost {
+    background-image: url("assets/ghost.jpg");
+    width: 368px;
+    height: 368px;
+    left: 5%;
+    top: 5%; 
+    position: absolute;
+    background-size: cover;
+}
